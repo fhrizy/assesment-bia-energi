@@ -1,4 +1,4 @@
-<img width="1439" alt="Screen Shot 2024-05-05 at 10 39 50 PM" src="https://github.com/fhrizy/assesment-bia-energi/assets/93750565/f9795aed-801d-4671-bb7a-7a8cdd135777"># TEST ASSESSMENT FRONT END
+# TEST ASSESSMENT FRONT END
 
 ### Features
 
