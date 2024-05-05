@@ -1,30 +1,79 @@
-# React + TypeScript + Vite
+<img width="1439" alt="Screen Shot 2024-05-05 at 10 39 50 PM" src="https://github.com/fhrizy/assesment-bia-energi/assets/93750565/f9795aed-801d-4671-bb7a-7a8cdd135777"># TEST ASSESSMENT FRONT END
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
 
-Currently, two official plugins are available:
+#### Character counting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Terdapat code untuk menghitung character yang diinputkan oleh user sebagai berikut:
 
-## Expanding the ESLint configuration
+```bash
+let text =
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+console.log(text.length)
+```
+#### Sequense
 
-- Configure the top-level `parserOptions` property like this:
+Terdapat code untuk menampilkan deret angka tertentu yang dapat di tentukan jumlah deretnya oleh user sebagai berikut:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+##### Deret angka yang dikalikan dengan angka itu sendiri
+```bash
+  var sequence = []
+	for (var i = 0; i < n; i++) {
+		sequence.push(i * i)
+	}
+	return sequence.join(', ')
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##### Deret angka yang dikalikan dengan dirinya sendiri ditambah 1
+```bash
+  var sequence = []
+	for (var i = 0; i < n; i++) {
+		sequence.push(i * i + 1)
+	}
+	return sequence.join(', ')
+```
+
+##### Deret angka fibonacci
+```bash
+  var sequence = [0, 1]
+	for (var i = 2; i < n; i++) {
+		sequence.push(sequence[i - 1] + sequence[i - 2])
+	}
+	return sequence.join(', ')
+```
+
+##### Deret angka fibonacci ditambah 1
+```bash
+  var sequence = [0, 0]
+	for (let i = 2; i < n; i++) {
+		sequence.push(sequence[i - 1] + sequence[i - 2] + 1)
+	}
+	return sequence.join(', ')
+```
+
+#### Character counting
+
+Terdapat CRUD user yang dapat digunakan untuk transaction new user, update dan delete user.
+
+<img width="1439" alt="Screen Shot 2024-05-05 at 10 39 50 PM" src="https://github.com/fhrizy/assesment-bia-energi/assets/93750565/885dd73a-00dc-47a6-8dfd-d83da355f054">
+
+### How to use
+
+#### Install it and run:
+
+```bash
+npm install
+npm run dev/npm start
+# or
+yarn
+yarn dev
+
+#### Run this if your projcet ready:
+
+npm build
+# or
+yarn build
+```
+
+
