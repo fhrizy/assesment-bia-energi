@@ -38,8 +38,8 @@ console.log(handleC(10))
 
 // bilangan fibonacci ditambah 1
 function handleD(n) {
-	let sequence = [0, 0]
-	for (let i = 2; i < n; i++) {
+	var sequence = [0, 0]
+	for (var i = 2; i < n; i++) {
 		sequence.push(sequence[i - 1] + sequence[i - 2] + 1)
 	}
 	return sequence.join(', ')
