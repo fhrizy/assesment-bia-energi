@@ -52,7 +52,7 @@ Terdapat code untuk menampilkan deret angka tertentu yang dapat di tentukan juml
 	return sequence.join(', ')
 ```
 
-#### Character counting
+#### CRUD Users
 
 Terdapat CRUD user yang dapat digunakan untuk transaction new user, update dan delete user.
 
